@@ -40,9 +40,8 @@ router.get('/', (req, res) => {
 
 // get one troll
 router.get('/random', (req, res) => {
-  const randomIndex = Math.floor(Math.random() * TROLLS.length)
-  console.log(randomIndex)
-    res.status(200).json(TROLLS[randomIndex])
+    const idx = Math.floor(Math.random() * TROLLS.length)
+    res.status(200).json(TROLLS[idx])
 })
 
 module.exports = router
