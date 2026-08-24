@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/health', healthRouter)
-app.use('/geologies', healthRouter)
+app.use('/geologies', geologiesRouter)
 app.use('/trolls', trollsRouter)
 
 app.listen(PORT, () => {
